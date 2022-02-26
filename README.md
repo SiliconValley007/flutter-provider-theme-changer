@@ -1,6 +1,10 @@
 # provider_theme_changer
 
-A new Flutter project.
+A Flutter project on changing the theme of the entire app using provider for state management.
+
+![provider theme changer](https://user-images.githubusercontent.com/63968451/155855989-3afea8bc-63df-469c-bd0e-a8073bfc0b4b.gif)
+
+You can check our my medium article here. (https://medium.com/@debjeetdas1012/flutter-provider-theme-changer-app-d8a5e4d9a647)
 
 ## Getting Started
 
