@@ -4,7 +4,7 @@ import 'package:provider_theme_changer/services/theme_service.dart';
 
 class ThemeProvider extends ChangeNotifier {
   late ThemePreference _themePreference;
-  late ThemeService _service;
+  late final ThemeService _service;
 
   ThemeMode get themeMode => getTheme(_themePreference);
 
