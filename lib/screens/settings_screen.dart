@@ -25,17 +25,17 @@ class SettingsScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomRadioButton(
-              onPressed: () => _themeProvider.setLight(),
+              onPressed: _themeProvider.setLight,
               isSelected: _themeProvider.themeMode == ThemeMode.light,
               buttonText: 'Light Theme',
             ),
             CustomRadioButton(
-              onPressed: () => _themeProvider.setDark(),
+              onPressed: _themeProvider.setDark,
               isSelected: _themeProvider.themeMode == ThemeMode.dark,
               buttonText: 'Dark Theme',
             ),
             CustomRadioButton(
-              onPressed: () => _themeProvider.setSystem(),
+              onPressed: _themeProvider.setSystem,
               isSelected: _themeProvider.themeMode == ThemeMode.system,
               buttonText: 'System Theme',
             ),
