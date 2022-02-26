@@ -10,12 +10,12 @@ class ThemeProvider extends ChangeNotifier {
 
   ThemeProvider() {
     _themePreference = ThemePreference.system;
-    setPersistentTheme();
     _service = ThemeService();
+    setPersistentTheme();
   }
 
   setPersistentTheme() async {
-    final value = await ThemeService().getTheme();
+    final value = await _service.getTheme();
     _themePreference = ThemePreference.values[value];
     notifyListeners();
   }
